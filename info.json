@@ -1,0 +1,11 @@
+
+{
+  "name": "lordodin_no_drains",
+  "version": "2.0.0",
+  "title": "No Power Drains",
+  "author": "LordOdin",
+  "homepage": "none",
+  "description": "Removes energy drains so idle entities don't consume power anymore. Configurable. You designed a roboport, a space platform and a way to communicate to in freely in real time. It's really hard to think that you haven't found a way to put a simple relay switch inside your laser and tesla turrets and machines so they won't use power when idle.",
+  "dependencies": ["base >= 0.15.0","? Krastorio2 >= 0.0.1"],
+  "factorio_version": "2.0"
+} 
