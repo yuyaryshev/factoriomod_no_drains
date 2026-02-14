@@ -14,12 +14,17 @@ for i_type, v_type in pairs(data.raw) do
 
                 -- Check if type exists in type_drains and if the setting for it is enabled
                 if type_drains[entity_type] and settings.startup["remove-drain-" .. entity_type].value then
-					if type(v_name.energy_source) == "table" and v_name.energy_source.drain then
+--					if type(v_name.energy_source) == "table" and v_name.energy_source.drain then
+					if v_name.energy_source and v_name.energy_source.type == "electric" and type(v_name.energy_source) == "table" then
 						v_name.energy_source.drain = "0W"
 					end
 				
 					if old_energy_usage and type_drains[entity_type].remove_usage then
 						v_name.energy_usage = entity_type == "radar" and "1W" or "0W"
+						if entity_type == "radar" then					
+							 v_name.energy_per_nearby_scan="1J"
+							 v_name.energy_per_sector="30J"
+						end						
 					end
                 end
 				
