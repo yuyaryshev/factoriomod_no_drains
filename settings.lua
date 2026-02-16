@@ -13,6 +13,15 @@ data:extend(
                 order = "a-" .. type
             })
         end
+
+        table.insert(settings, {
+            type = "bool-setting",
+            name = "remove-drain-radar-only-if-no-scan",
+            setting_type = "startup",
+            default_value = true,
+            order = "b-radar-only-if-no-scan"
+        })
+
         return settings
     end)()
 )

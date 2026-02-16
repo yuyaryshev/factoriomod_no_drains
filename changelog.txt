@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.0
+Date: 2026-02-14
+  Changes:
+    - Added startup setting to only remove radar drain for radars with no extra scan range over vision.
+    - Clarified radar setting text to match scan-range vs vision-range behavior.
+
+---------------------------------------------------------------------------------------------------
 Version: 2.0.3
 Date: 2025-11-18
   Bugfix:
