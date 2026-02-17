@@ -7,5 +7,6 @@ type_drains = {
     ["inserter"] = {default_setting=true, icon="inserter"},
     ["pump"] = {default_setting=true, icon="pump"},
     ["assembling-machine"] = {default_setting=true, icon="assembling-machine"},
+    ["beacon"] = {default_setting=false, icon="beacon", remove_usage=true},
     ["lightning-attractor"] = {default_setting=false, icon="lightning-attractor"},
 }

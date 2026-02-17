@@ -35,7 +35,7 @@ for i_type, v_type in pairs(data.raw) do
 					end
 				
 					if old_energy_usage and type_drains[entity_type].remove_usage then
-						v_name.energy_usage = entity_type == "radar" and "1W" or "0W"
+						v_name.energy_usage = (entity_type == "radar" or entity_type == "beacon") and "1W" or "0W"
 						if entity_type == "radar" then					
 							 v_name.energy_per_nearby_scan="1J"
 							 v_name.energy_per_sector="30J"
